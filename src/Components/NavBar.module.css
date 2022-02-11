@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: left;
+}
+
+.authlog {
+  display: flex;
+  gap: 100px;
+}
+.Navs {
+  display: flex;
+  align-items: center;
+  color: rgb(109, 109, 109);
+  height: 50px;
+}
+.btn {
+  padding: auto;
+  margin: auto;
+  border-radius: 25px;
+}
+.link {
+  color: black;
+  font-weight: 500;
+}

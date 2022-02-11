@@ -1,0 +1,104 @@
+.answered::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 180px;
+  background-color: rgb(67, 52, 52);
+  transform: rotate(45deg);
+  top: -56px;
+  left: -20px;
+}
+
+.answered {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.results::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 250px;
+  background-color: #000000;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.results > p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.option {
+  width: 100%;
+  height: 120px;
+  background-color: #d8d9dae8;
+  border-radius: 15px;
+  padding: 10px;
+}
+.option .outer {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(248, 248, 248);
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.option p {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.option .outer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+  z-index: 3;
+}
+.option .outer div {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(84, 95, 131);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+
+.active {
+  background-color: #a9a8c4 !important;
+  position: relative;
+}
+.active::after {
+  content: "your vote";
+  color: rgb(0, 0, 0);
+  position: absolute;
+  background-color: rgb(255, 146, 4);
+  background-size: contain;
+  width: 100px;
+  height: 28px;
+  top: -15px;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}

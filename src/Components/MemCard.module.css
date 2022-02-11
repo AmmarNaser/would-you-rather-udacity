@@ -1,0 +1,10 @@
+.score {
+  margin: 50px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(24, 20, 16, 0.405);
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+}
