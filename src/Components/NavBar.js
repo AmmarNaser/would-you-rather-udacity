@@ -17,7 +17,7 @@ export default function NavBar() {
   const dispatch = useAppDispatch();
 
   function handleLogout() {
-    localStorage.removeItem("logedUser");
+    // localStorage.removeItem("logedUser");
     dispatch(ActionsOfUsers.logging(null));
   }
   return (

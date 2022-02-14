@@ -7,15 +7,10 @@ import E404 from "./E404";
 
 export default function QuestionPage() {
   const questions = useSelector((state) => state.questions);
-
   const users = useSelector((state) => state.users);
-
   const logedUser = users.users[users.logedUser];
-
   const questId = useParams().questId;
-
   const thequestion = questions[questId];
-
   const AnsweredOne = Object.keys(logedUser.answers).includes(questId);
   if (!thequestion) {
     return <E404 />;

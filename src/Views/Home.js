@@ -9,12 +9,11 @@ export default function Home() {
   const logedUser = members.users[members.logedUser];
   const answerCheck = (question) =>
     Object.keys(logedUser?.answers).includes(question.id);
-
-  const answerd = Object.values(questions).filter((question) =>
-    answerCheck(question)
-  );
   const unAnswerd = Object.values(questions).filter(
     (question) => !answerCheck(question)
+  );
+  const answerd = Object.values(questions).filter((question) =>
+    answerCheck(question)
   );
   return (
     <Container className=" flex justify-content-lg-center mt-5">
