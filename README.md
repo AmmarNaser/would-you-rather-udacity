@@ -6,8 +6,8 @@ A quiz game application that allows users make easy MCQ exams.
 
 ## Overview
 
-![Login page](./_overview/Pic1.jpg)
-![Home page](./_overview/Pic2.jpg)
+![Login page](./_overview/Pic11.jpg)
+![Home page](./_overview/Pic22.jpg)
 
 ## Teck Stack
 
